@@ -1,0 +1,41 @@
+section {
+  display: flex;
+  flex-direction: row;
+}
+h2 {
+  width: auto;
+  max-width: var(--max-width);
+  display: block;
+
+  margin: 10px 15px;
+
+  background-color: var(--sec-green);
+}
+img {
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 10px;
+}
+p {
+  margin: 0px 10px 10px 10px;
+}
+@media only screen and (max-width: 900px){
+  img {
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 360px){
+  p {
+    margin: 0px 2px;
+  }
+}

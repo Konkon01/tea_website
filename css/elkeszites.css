@@ -1,0 +1,19 @@
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.creaListItem {
+  margin-bottom: 5px;
+}
+video {
+  width: 99%;
+  max-width: 500px;
+
+  border: var(--basic-border);
+
+  margin-bottom: 20px;
+}
+aside {
+  text-align: center;
+}

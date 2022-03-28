@@ -1,0 +1,72 @@
+#tableDiv {
+  width: 90%;
+  max-width: 800px;
+
+  display: block;
+
+  overflow-x: scroll;
+}
+
+table,
+th,
+td {
+  border: var(--basic-border);
+}
+table {
+  width: 100%;
+  min-width: 670px;
+
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px 20px;
+}
+
+form {
+  width: 90%;
+  max-width: 800px;
+
+  padding: 10px 10px;
+
+  border: var(--basic-border);
+}
+form label {
+  margin-right: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+form > fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+textarea {
+  width: 100%;
+  resize: none;
+}
+.button {
+  padding: 10px 20px;
+
+  font-weight: bold;
+  color: white;
+  background-color: var(--sec-green);
+  border: var(--basic-border);
+
+  cursor: pointer;
+}
+.button:last-child {
+  margin-left: 20px;
+}
+.button:hover {
+  background-color: var(--main-green);
+}
+
+#messageDiv {
+  padding: 10px 55px;
+
+  border: var(--basic-border);
+}
+#messageDiv > p {
+  margin: 0px;
+}
