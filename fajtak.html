@@ -4,60 +4,93 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/tortAndFajtak.css">
-  <link rel="stylesheet" href="css/fajtak.css">
-  
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, print">
+  <link rel="stylesheet" href="css/tortAndFajtak.css" type="text/css" media="screen, print">
+  <link rel="stylesheet" href="css/fajtak.css" type="text/css" media="screen, print">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/nyomtatas.css" type="text/css" media="print"/>
+  <script src="js/zoom.js" defer></script>
   <script src="js/form.js" defer></script>
-  <title>Tea</title>
+  <title>Tea - Fajták</title>
 </head>
 <body>
-  <h1 id="menuCim"> Tea </h1>
+  <p id="menuCim"> Tea </p>
   <header>
     <img src="media/menu/menu_felet.png" alt="tea farm" id="menuKep">
     <nav id="navbar">
       <ul >
-        <a class="navLink" href="index.html"><li>Főoldal</li></a>
-        <a class="navLink" href="tortenet.html"><li>Története</li></a>
-        <a class="navLink" href="elkeszites.html"><li>Elkészítése</li></a>
-        <a class="navLink activeLink" href="fajtak.html"><li>Fajták</li></a>
+        <li><a class="navLink" href="index.html">Főoldal</a></li>
+        <li><a class="navLink" href="tortenet.html">Története</a></li>
+        <li><a class="navLink" href="elkeszites.html">Elkészítése</a></li>
+        <li><a class="navLink activeLink" href="fajtak.html">Fajták</a></li>
       </ul>
+      <span id="zoom" class="material-icons">zoom_in</span>
     </nav>
   </header>
   <div id="content">
     <article>
-      <h2>Fehér tea – 白茶 Bai cha</h2>
-      <section class="oddSec">
-          <img src="media/fajtak/feher_tea.jpg" alt="Fehér tea levelek">      
-        <p>
-          Tea típusok közül, a fehér tea a legkevésbé feldolgozott. A lágy ízéről, aromájáról és frissítő tulajdonságáról ismert fehér tea Fucsien tartomány különlegessége. Három fő készítési területe: Fuding, Zhenghe és Jianyang. Mai trend, hogy a dél-kínai Yunnan-ban valamint a világ több más országában (pl. India, Nepál) is elkezdtek fehér teákat készíteni.
-          <br>
-          A tavaszi szüret legértékesebb első két hetes időszakában szedett alapanyag csak minimális feldolgozáson esik át. Szedés után szárítják, majd válogatják végül csomagolják. Eközben a levelek enyhén oxidálódnak. A legértékesebb fehér tea a csak ezüstös, pihés rügyeket tartalmazó  Yin Zhen (“Ezüst Tű”, “Silver Needles”) majd a rügy-levél kombinációt tartalmazó Bai Mu Dan (“Fehér Bazsarózsa”, “White Peony”), ezután a csak leveleket tartalmazó Gong Mei (“Tribute Eyebrow”) és végül a Shou Mei (“Az Öröklét Szemöldöke”, “Longevity Eyebrow”). Ezek a kategóriák a szedés idejében is eltérnek egymástól. Tehát az Ezüst Tű az első tavaszi szedés, a Shou Mei az utolsó. Érdekesség, hogy kaptunk már olyan Shou Mei teát a Chen családtól amely rügyeket is tartalmazott. Tehát a fenti kategóriák nem kőbe vésettek.
-        </p>
+      <h1 id="title">A leghíresebb teafajták</h1>
+      <section>
+      <h2 id="feher_tea" class="oddH2">Fehér tea - 白茶 Bai cha</h2>
+        <div class="oddSec">
+          <figure>
+            <a href="media/fajtak/feher_tea.jpg" target="blank">
+              <img src="media/fajtak/feher_tea_kicsi.jpg" alt="Fehér tea levelek">      
+            </a>
+            <figcaption>Fehér tea levelei</figcaption>
+          </figure>
+          <p>
+            Tea típusok közül, a <i>fehér tea</i> a legkevésbé feldolgozott. A lágy ízéről, aromájáról és frissítő tulajdonságáról ismert fehér tea Fucsien tartomány különlegessége. Három fő készítési területe: Fuding, Zhenghe és Jianyang. Mai trend, hogy a dél-kínai Yunnan-ban valamint a világ több más országában (pl. India, Nepál) is elkezdtek fehér teákat készíteni.
+            <br>
+            A tavaszi szüret legértékesebb első két hetes időszakában szedett alapanyag csak minimális feldolgozáson esik át. Szedés után szárítják, majd válogatják végül csomagolják. Eközben a levelek enyhén oxidálódnak. A legértékesebb fehér tea a csak ezüstös, pihés rügyeket tartalmazó  Yin Zhen (“Ezüst Tű”, “Silver Needles”) majd a rügy-levél kombinációt tartalmazó Bai Mu Dan (“Fehér Bazsarózsa”, “White Peony”), ezután a csak leveleket tartalmazó Gong Mei (“Tribute Eyebrow”) és végül a Shou Mei (“Az Öröklét Szemöldöke”, “Longevity Eyebrow”). Ezek a kategóriák a szedés idejében is eltérnek egymástól. Tehát az Ezüst Tű az első tavaszi szedés, a Shou Mei az utolsó. Érdekesség, hogy kaptunk már olyan Shou Mei teát a Chen családtól amely rügyeket is tartalmazott. Tehát a fenti kategóriák nem kőbe vésettek.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 id="zold_tea" class="evenH2">Zöld tea - 绿茶 Lü cha</h2>
+        <div class="evenSec">
+          <figure>
+            <a href="media/fajtak/zold_tea.jpg" target="blank">
+              <img src="media/fajtak/zold_tea_kicsi.jpg" alt="Zöld tea levelek">        
+            </a>
+            <figcaption>Zöld tea levelei</figcaption>
+          </figure>
+          <p>
+            A legkiválóbb zöldekhez való alapanyagot két levél-egy rügy, egy levél-egy rügy, vagy csak a rügy kombinációban szedik. Rövid ideig fonnyasztják, hogy a levelek veszítsenek kissé nedvességtartalmukból de amilyen gyorsan csak lehet besütik (“sha qing”, angolul “kill green”, a “zöld megölése”), (Japánban jellemzően gőzölik), hogy megállítsák az enzimek által végbemenő oxidációt.
+            <br>
+            Ez négy különböző módon végezhető el: napon történő szárítás (némileg oxidált teát eredményez), gőzölés, sütés meleg levegővel és sütés wok-ban. A lényeg, hogy az alapanyag a legkíméletesebb és leggyorsabb módon eljusson a szedés után az üzembe. Ha a zöld teánk sárga színű tealikőrt ad, azt mutatja, hogy az alapanyagot nem kezelték megfelelő gondossággal. A legtöbb zöld teát tavasszal (március / április) szedik, de nyáron is léteznek szüretek – ízükben persze kesernyésebb végeredménnyel.
+          </p>
+        </div>
       </section>
 
-      <h2 class="evenH2">Zöld tea – 绿茶 Lü cha</h2>
-      <section class="evenSec">
-          <img src="media/fajtak/zold_tea.jpg" alt="Zöld tea levelek">        
-        <p>
-          A legkiválóbb zöldekhez való alapanyagot két levél-egy rügy, egy levél-egy rügy, vagy csak a rügy kombinációban szedik. Rövid ideig fonnyasztják, hogy a levelek veszítsenek kissé nedvességtartalmukból de amilyen gyorsan csak lehet besütik (“sha qing”, angolul “kill green”, a “zöld megölése”), (Japánban jellemzően gőzölik), hogy megállítsák az enzimek által végbemenő oxidációt.
-          <br>
-          Ez négy különböző módon végezhető el: napon történő szárítás (némileg oxidált teát eredményez), gőzölés, sütés meleg levegővel és sütés wok-ban. A lényeg, hogy az alapanyag a legkíméletesebb és leggyorsabb módon eljusson a szedés után az üzembe. Ha a zöld teánk sárga színű tealikőrt ad, azt mutatja, hogy az alapanyagot nem kezelték megfelelő gondossággal. A legtöbb zöld teát tavasszal (március / április) szedik, de nyáron is léteznek szüretek – ízükben persze kesernyésebb végeredménnyel.
-        </p>
+      <section>
+        <h2 id="fekete_tea" class="oddH2">Fekete tea - 黑茶 Hei cha</h2>
+        <div class="oddSec">
+          <figure>
+            <a href="media/fajtak/fekete_tea.jpg" target="blank">
+              <img src="media/fajtak/fekete_tea_kicsi.jpg" alt="Fekete tea levelek"> 
+            </a>
+            <figcaption>Fekete tea levelei</figcaption>
+          </figure>
+          <p>
+            A “hei cha” egy speciálisan kínai, különleges teakategória, szó szerinti fordításban <i>“sötét-” vagy “fekete tea”</i>>. Készítésekor irányított utó-érlelés, fermentáció történik, ahol az oxigénszegény környezetben, a felgyorsítottan érő tea a mikroorganizmusok átalakító munkája következtében egészen lágy karakterűvé változik. Szokatlan, erőteljes, érettebb illat jegyek kerülnek előtérbe. A sötét teáknak régióktól függően több típusa is ismert. Ezek körül a legismertebb a Yunnan-i sötét “Puer”, egy másik a Guangxi tartomány-beli “Liu Bao”. Anhui, Hunan, Hubei, Shaanxi, Szecsuán tartományoknak is megvan a maga sötét teája. Az ilyen típusú teákat szállították a “Tea Ló Úton” korábban Tibetbe, de a gyér növényzettel borított Tibeti fennsík és az északibb vidékek még ma is az egyik fő felvevő piaca az utóérlelt teáknak. Mivel a csersavak ezekben a teákban már lebomlottak (vagy le fognak bomlani – lásd sheng puer), ezért a szervezet számára könnyen befogadhatóak, kíméletesek a gyomornak és az emésztőrendszernek. Segítik az emésztést és nagyon jó ásványi-anyag források. Jó választás lehet a nap bármely szakában, koffein tartalmuk miatt éberebbnek, magas ásványi anyag tartalmuk (pl. lítium) segít a relaxált test érzet kialakításában.
+          </p>
+        </div>
       </section>
-    
-      <h2>Fekete tea – 黑茶 Hei cha</h2>
-      <section class="oddSec">
-          <img src="media/fajtak/fekete_tea.jpg" alt="Fekete tea levelek"> 
-        <p>
-          A “hei cha” egy speciálisan kínai, különleges teakategória, szó szerinti fordításban “sötét-” vagy “fekete tea”. Készítésekor irányított utó-érlelés, fermentáció történik, ahol az oxigénszegény környezetben, a felgyorsítottan érő tea a mikroorganizmusok átalakító munkája következtében egészen lágy karakterűvé változik. Szokatlan, erőteljes, érettebb illat jegyek kerülnek előtérbe. A sötét teáknak régióktól függően több típusa is ismert. Ezek körül a legismertebb a Yunnan-i sötét “Puer”, egy másik a Guangxi tartomány-beli “Liu Bao”. Anhui, Hunan, Hubei, Shaanxi, Szecsuán tartományoknak is megvan a maga sötét teája. Az ilyen típusú teákat szállították a “Tea Ló Úton” korábban Tibetbe, de a gyér növényzettel borított Tibeti fennsík és az északibb vidékek még ma is az egyik fő felvevő piaca az utóérlelt teáknak. Mivel a csersavak ezekben a teákban már lebomlottak (vagy le fognak bomlani – lásd sheng puer), ezért a szervezet számára könnyen befogadhatóak, kíméletesek a gyomornak és az emésztőrendszernek. Segítik az emésztést és nagyon jó ásványi-anyag források. Jó választás lehet a nap bármely szakában, koffein tartalmuk miatt éberebbnek, magas ásványi anyag tartalmuk (pl. lítium) segít a relaxált test érzet kialakításában.
-        </p>
-      </section>
+        <a class="link" href="https://teavolution.eu/tea-fajtak/" target="blank">További teafajtákról itt olvashatsz!</a>
+      
     </article>
 
     <article>
+      <h2 id="koffein_tartalmak">Koffein tartalmak</h2>
       <div id="tableDiv">
         <table>
+          <caption>
+            <details>
+                <summary>Súgó</summary>
+                <p>A táblázat a különböző italok koffein tartalmát mutatja meg.</p>
+            </details>
+          </caption>
           <thead>
             <tr>
               <th>Italok</th>
@@ -79,41 +112,41 @@
         </table>
       </div>
     </article>
-    <article id="messageBox">
+    <div id="messageBox">
 
-    </article>
+    </div>
     <article>
+      <h2 id="kerdoiv">Kérdőív</h2>
       <form id="habitForm">
-        <h2>Kérdőív</h2>
 
         <fieldset>
           <legend>Adatok</legend>
           <label for="name">Név: </label>
-          <input type="text" name="name" id="name" required>          
+          <input type="text" name="name" id="name" maxlength="30" required>          
           <label for="email">E-mail: </label>
-          <input type="email" name="email" id="email" required>        
+          <input type="email" name="email" id="email" maxlength="50" required>        
         </fieldset>
 
         <fieldset>
           <legend>Preferenciák</legend>
           <div>
-            <label for="habit">Szoktál teát fogyasztani? </label>
-            <input type="radio" name="habit" value="yes" required> Igen
-            <input type="radio" name="habit" value="no"> Nem
+            <p>Szoktál teát fogyasztani? </p>
+            <input type="radio" id="yes" name="habit" value="yes" required> <label for="yes">Igen</label>
+            <input type="radio" id="no" name="habit" value="no"> <label for="no">Nem</label>
           </div>
   
           <div>
-            <label for="liking">Melyik tea nyerte el a tetszésedet? </label>
-            <input type="checkbox" name="liking" value="feher"> Fehér tea
-            <input type="checkbox" name="liking" value="zold"> Zöld tea
-            <input type="checkbox" name="liking" value="fekete"> Fekete tea  
+            <p>Melyik tea nyerte el a tetszésedet? </p>
+            <input type="checkbox" id="feher" name="liking" value="feher"> <label for="feher">Fehér tea</label>
+            <input type="checkbox" id="zold" name="liking" value="zold"> <label for="zold">Zöld tea</label>
+            <input type="checkbox" id="fekete" name="liking" value="fekete"> <label for="fekete">Fekete tea</label>  
           </div>
         </fieldset>
 
         <fieldset>
           <legend>Egyéb</legend>
           <label for="opinion">Véleményed a honlapról: </label>
-          <textarea name="opinion" id="opinion" cols="30" rows="10"></textarea>
+          <textarea name="opinion" id="opinion" cols="30" rows="10" maxlength="150"></textarea>
         </fieldset>
         <button type="submit" value="submit" class="button">Beadom</button>
         <button type="reset" value="reset" class="button">Újra kezdem</button>

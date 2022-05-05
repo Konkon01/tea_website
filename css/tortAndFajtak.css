@@ -1,18 +1,32 @@
 .oddSec {
   display: flex;
   flex-direction: row;
+  margin: 0px 15px;
 }
 .oddSec > p {
   margin-left: 10px;
 }
+.oddH2 {
+  margin-left: 15px;
+}
 .evenSec {
   display: flex;
   flex-direction: row-reverse;
+  margin: 0px 15px;
 }
 .evenSec > p {
   margin-right: 10px;
 }
+.evenH2 {
+  margin-right: 15px;
+  text-align: end;
+}
 @media only screen and (max-width: 1000px) {
+  .oddH2,
+  .evenH2{
+    margin: 0px;
+  }
+
   .oddSec,
   .evenSec {
     flex-direction: column;

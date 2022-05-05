@@ -19,23 +19,85 @@ img {
 p {
   margin: 0px 10px 10px 10px;
 }
-@media only screen and (max-width: 900px){
-  img {
-    align-self: flex-start;
-  }
+div {
+  display: flex;
+  flex-direction: row;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+#content>div{
+  max-width: var(--max-width);
+  width: 100%;
+
+  background-color: var(--sec-green);
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+#footer {
+  width: 100%;
+  margin: 0px;
+
+  background-color: var(--sec-green);
+
+  z-index: 2;
+
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  border-top: var(--basic-border);
+}
+#footer>p {
+  margin: 5px 10px;
+}
+#footer>p:last-child {
+  margin-left: auto;
 }
 
-@media only screen and (max-width: 750px){
-  section {
+@media only screen and (max-width: 1000px){
+  #content div {
     flex-direction: column;
     align-items: center;
   }
-  img {
-    align-self: center;
+  span {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #header {
+    height: 380px;
+  }
+}
+@media only screen and (max-width: 450px){
+  #header {
+    height: 347px;
+  }
+  #footer {
+    flex-direction: column;
+  }
+  #footer>p:last-child {
+    margin-left: 10px;
   }
 }
 @media only screen and (max-width: 360px){
   p {
     margin: 0px 2px;
+  }
+  #header {
+    height: 300px;
   }
 }
